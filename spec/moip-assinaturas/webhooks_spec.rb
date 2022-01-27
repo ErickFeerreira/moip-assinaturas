@@ -42,14 +42,12 @@ describe Moip::Assinaturas::Webhooks do
   describe '.build(params)' do
     subject(:hook) { Moip::Assinaturas::Webhooks.build(params) }
 
-    its(:model) { should eq(:model) }
-    its(:event) { should eq(:event) }
-    its(:events) { should eq({}) }
-
-    its(:date) { should eq('28/12/2012 15:38:46') }
-
-    its(:env) { should eq('generic_env') }
-    its(:resource) { should eq({ 'test' => 'test generic resource' }) }
+    it { expect(subject.model).to eq(:model) }
+    it { expect(subject.event).to eq(:event) }
+    it { expect(subject.events).to eq({}) }
+    it { expect(subject.date).to eq('28/12/2012 15:38:46') }
+    it { expect(subject.env).to eq('generic_env') }
+    it { expect(subject.resource).to eq({ 'test' => 'test generic resource' }) }
   end
 
   describe '#on(model, on_events, &block)' do
