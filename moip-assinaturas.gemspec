@@ -12,14 +12,14 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{Ruby Gem para uso do serviço de assinaturas do Moip}
   gem.homepage      = "https://github.com/ibody/moip-assinaturas"
 
-  gem.add_development_dependency 'rake',          '~> 10.3.2'
-  gem.add_development_dependency 'rspec',         '~> 2.13'
-  gem.add_development_dependency 'guard-rspec',   '~> 2.5.4'
-  gem.add_development_dependency 'growl',         '~> 1.0.3'
-  gem.add_development_dependency 'fakeweb',       '~> 1.3.0'
-  gem.add_development_dependency 'pry',           '~> 0.9'
-  gem.add_development_dependency 'simplecov',     '~> 0.10.0'
-  gem.add_dependency             'httparty',      '~> 0.13.0'
+  gem.add_development_dependency 'rake',          '>= 10.3.2'
+  gem.add_development_dependency 'rspec',         '>= 2.13'
+  gem.add_development_dependency 'guard-rspec',   '>= 2.5.4'
+  gem.add_development_dependency 'growl',         '>= 1.0.3'
+  gem.add_development_dependency 'fakeweb',       '>= 1.3.0'
+  gem.add_development_dependency 'pry',           '>= 0.9'
+  gem.add_development_dependency 'simplecov',     '>= 0.10.0'
+  gem.add_dependency             'httparty',      '>= 0.13.0'
   gem.add_dependency             'activesupport', '>= 2.3.2'
   gem.add_dependency             'json',          '>= 1.7'
 
